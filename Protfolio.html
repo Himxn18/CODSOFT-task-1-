@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Protfolio</title>
+    <link rel="stylesheet" href="protfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Himan's Protfolio</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi all, I'm <span class="highlight">Himan Kashyap</span> 👋</h1>
+            <p>Computer Science Student and aspiring full stack developer</p>
+            <a href="#projects" class="cta-btn">View Projects</a>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2><strong>About Me</strong></h2>
+        <p>Hi,I'm Himan Kashyap, and I'm pursuing my graduation in Computer Science & Engineering from <a href="https://ustm.ac.in/"><strong class="blue-text">USTM</strong></a>.  I'm aspiring full-stack developer eager to learn, grow, and gain hands-on experience. And this is my Protfolio website</p>
+    </section>
+    <section id="projects" class="projects">
+        <h2>My Work</h2>
+        <p>I have made <a href="https://github.com/Himxn18/My-Projects/tree/main"><strong class="red-text">Amazon CLone</strong></a>.As my first minor project.</p>
+        <center>
+        <img src="clone.png" alt="Amazon Clone Screenshot" style="width: 30%; height: auto;">
+        <img src="clone1.png" alt="Amazon Clone Screenshot" style="width: 30%; height: auto;">
+            <p><strong style="color: blue;">Technologies Used: </strong>HTML & CSS</p>
+            </center>
+        </section>
+        
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="skills-inner">
+                        <div class="mh-professional-skill">
+                            <h3>Technical Skills</h3>
+                            <div class="each-skills">
+                                <div class="candidatos">
+                                    <div class="parcial">
+                                        <div class="info">
+                                            <div class="nome" style="color: aqua;">HTML5</div>
+                                            <div class="percentage-num" style="color: aqua;">45%</div>
+                                        </div>
+                                        <div class="progressBar">
+                                            <div class="percentagem" style="width: 45%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="candidatos">
+                                    <div class="parcial">
+                                        <div class="info">
+                                            <div class="nome" style="color: aqua;">CSS</div>
+                                            <div class="percentage-num" style="color:aqua;">26%</div>
+                                        </div>
+                                        <div class="progressBar">
+                                            <div class="percentagem" style="width: 26%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="candidatos">
+                                    <div class="parcial">
+                                        <div class="info">
+                                            <div class="nome" style="color: aqua;">JavaScript</div>
+                                            <div class="percentage-num" style="color: aqua;">02%</div>
+                                        </div>
+                                        <div class="progressBar">
+                                            <div class="percentagem" style="width: 2%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="candidatos">
+                                    <div class="parcial">
+                                        <div class="info">
+                                            <div class="nome" style="color: aqua">Python</div>
+                                            <div class="percentage-num" style="color: aqua;">30%</div>
+                                        </div>
+                                        <div class="progressBar">
+                                            <div class="percentagem" style="width: 30%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="resume" class="resume-section">
+        <h2 class="resume-heading" style="color: blueviolet;">Download My Resume</h2>
+        <a href="My Resume.pdf" download="My Resume" class="download-btn">
+            Download Resume
+        </a>
+    </section>
+    <section id="contacts" class="contacts">
+        <h2>Contact Me</h2>
+        <!--<p style="color: white;">I'd love to hear from you! Fill out the form below to get in touch.</p>
+        <div class="contact-container">
+            <input type="hidden" name="access_key" value="527d5cc9-31dc-4815-a4e1-b2c3973c2b6e">
+            <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submi"
+            method="POST">
+                <div class="input-group">
+                    <label for="name" style="color: white;"><i class="fas fa-user" style="color: white;"></i> Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required style="text-align: center;">
+                    <span class="error-message" id="nameError"></span>
+                </div>
+                <div class="input-group">
+                    <label for="email" style="color: white;"><i class="fas fa-envelope" style="color: white;"></i> Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required style="text-align: center;">
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                <div class="input-group">
+                    <label for="message" style="font-weight: bold; color: white;"><i class="fas fa-comment-dots" style="color: white;"></i>Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required style="text-align: center;"></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+                <p id="thankYouMessage" style="display: none;">Thank You! Your message has been sent.</p>
+            </form>-->
+    <div class="contact-info">
+        <h3>Contact Info</h3>
+        <p><i class="fas fa-phone"></i> +91 6000969651</p>
+        <p><i class="fas fa-envelope"></i>kashyaphiman0718@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Guwahati, Assam</p>
+        <a href="https://github.com/Himxn18"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/himan-kashyap-1278492a1/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/himankashyap5547/"><i class="fab fa-instagram"></i></a>
+    </div>
+    </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Himan Kashyap.All Rights Reserved</p>
+    </footer>
+</body>
+</html>
