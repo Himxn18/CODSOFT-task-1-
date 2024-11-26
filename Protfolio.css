@@ -1,1 +1,390 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #6a1b9a; /* Purple */
+    color: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+}
+
+header .logo:hover {
+    color: #ffee58; /* Yellow */
+    transform: scale(1.1);
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: all 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #5e35b1;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f3e5f5; /* Light purple */
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    transition: color 0.3s;
+}
+
+.hero-content h1:hover {
+    color: #4a148c;
+}
+
+.hero-content p {
+    font-size: 20px;
+    transition: color 0.9s;
+}
+
+.hero-content p:hover {
+    color:midnightblue;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #6a1b9a;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: midnightblue;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.about h2 {
+    color: midnightblue;
+    margin-bottom: 20px;
+}
+.about a {
+    color: #6a1b9a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about a:hover {
+    text-decoration: underline;
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.projects h2 {
+    color: #6a1b9a;
+    margin-bottom: 20px;
+}
+
+.projects img {
+    margin: 20px;
+    border: 2px solid #6a1b9a;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.projects img:hover {
+    transform: scale(1.05);
+}
+
+.red-text {
+    color: #d32f2f;
+}
+
+/* Skills Section */
+/* Skills Section */
+.skills {
+    padding: 50px 20px;
+    background-color: #ede7f6; /* Very light purple */
+    text-align: center;
+}
+
+.skills h3 {
+    color: #6a1b9a;
+    margin-bottom: 20px;
+}
+
+.each-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.candidatos {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    transition: transform 0.3s;
+}
+
+.candidatos:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(106, 27, 154, 0.3);
+    border-radius: 5px;
+}
+
+.parcial {
+    margin-bottom: 10px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.nome {
+    font-weight: bold;
+}
+
+.percentage-num {
+    font-weight: bold;
+}
+
+.progressBar {
+    background-color: #cccccc;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.percentagem {
+    height: 100%;
+    transition: width 0.5s;
+}
+
+.percentagem:nth-child(1) {
+    background-color: #6a1b9a; 
+}
+
+.percentagem:nth-child(2) {
+    background-color: #42a5f5; 
+}
+
+.percentagem:nth-child(3) {
+    background-color: #ffa726; 
+}
+
+.percentagem:nth-child(4) {
+    background-color: #66bb6a; 
+}
+
+/* Social Icons Alignment */
+.contact-info a {
+    margin: 0 10px;
+    display: inline-block;
+    font-size: 30px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.contact-info a:hover {
+    color: #4a148c;
+    transform: scale(1.2);
+}
+
+/* For Desktop: Center Align Social Icons in One Line */
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* Resume Section */
+.resume-section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.resume-section a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #6a1b9a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.resume-section a:hover {
+    background-color: #4a148c;
+}
+
+/* Contacts Section */
+.contacts {
+    padding: 50px 20px;
+    background-color: #f3e5f5;
+    text-align: center;
+}
+
+.contacts h2 {
+    color: #0b1f60;
+    margin-bottom: 20px;
+}
+
+
+.contact-info {
+    margin-top: 20px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    gap: 10px;
+    color: #6a1b9a;
+}
+
+.contact-info p,
+.contact-info a {
+    font-size: 16px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.contact-info p:hover,
+.contact-info a:hover {
+    color: midnightblue;
+    transform: scale(1.1);
+}
+
+.contact-info a {
+    margin: 0 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #6a1b9a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Contact Form */
+form {
+    margin: 20px auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: 16px;
+    color: #4a148c;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #6a1b9a;
+    box-shadow: 0 0 5px rgba(106, 27, 154, 0.5);
+    outline: none;
+}
+
+form button {
+    padding: 8px 16px; /* Reduced padding for smaller size */
+    font-size: 16px; /* Slightly smaller font size */
+    border: none;
+    background-color: #6a1b9a;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background-color: #4a148c;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(106, 27, 154, 0.3);
+}
+
+
+form label:hover {
+    color: #6a1b9a;
+    text-decoration: underline;
+}
+.contacts form {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contacts form:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
 
